@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace opc1_d11_WPF_texteditor
 {
@@ -20,15 +22,23 @@ namespace opc1_d11_WPF_texteditor
     /// </summary>
     public partial class MainWindow : Window
     {
-        string fileName = "Untitled";
         public MainWindow()
         {
             InitializeComponent();
-            MessageBar.Text = fileName;
+            MessageBar.Text = "Untitled";
         }
-        private void MenuNewSelect(object sender, RoutedEventArgs e)
+        private void MenuNew(object sender, RoutedEventArgs e)
         {
 
+        }
+        private void MenuOpen(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                TextEdit.Text = File.ReadAllText(openFileDialog.FileName);
+                MessageBar.Text = openFileDialog.FileName;
+            }
         }
     }
 }

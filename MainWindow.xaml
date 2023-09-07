@@ -9,10 +9,11 @@
     <Grid>
         <Menu Height="24" VerticalAlignment="Top" FontSize="16">
             <MenuItem Header="_File">
-                <MenuItem Header="_New" Click="MenuNewSelect"/>
+                <MenuItem Header="_New" Click="MenuNew"/>
+                <MenuItem Header="_Open" Click="MenuOpen"/>
             </MenuItem>            
         </Menu>
-        <TextBox HorizontalAlignment="Stretch" Margin="0,24,0,24" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" FontSize="16" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True"/>
-        <TextBlock Name="MessageBar" Height="24" HorizontalAlignment="Stretch" Margin="0,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" FontSize="16"/>
+        <TextBox Name="TextEdit" HorizontalAlignment="Stretch" Margin="0,24,0,24" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" FontSize="16" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True"/>
+        <TextBlock Name="MessageBar" Height="24" HorizontalAlignment="Stretch" Margin="0,0,0,0" TextWrapping="Wrap" Text="MessageBar" VerticalAlignment="Bottom" FontSize="16"/>
     </Grid>
 </Window>
