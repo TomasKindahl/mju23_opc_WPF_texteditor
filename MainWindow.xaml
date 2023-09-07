@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:opc1_d11_WPF_texteditor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TomKi's ultrasimpla text-editor" Height="400" Width="600">
     <Grid>
         <Menu Height="24" VerticalAlignment="Top" FontSize="16">
             <MenuItem Header="_File">
