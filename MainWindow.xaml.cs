@@ -20,9 +20,11 @@ namespace opc1_d11_WPF_texteditor
     /// </summary>
     public partial class MainWindow : Window
     {
+        string fileName = "Untitled";
         public MainWindow()
         {
             InitializeComponent();
+            MessageBar.Text = fileName;
         }
         private void MenuNewSelect(object sender, RoutedEventArgs e)
         {
