@@ -24,5 +24,9 @@ namespace opc1_d11_WPF_texteditor
         {
             InitializeComponent();
         }
+        private void MenuNewSelect(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
