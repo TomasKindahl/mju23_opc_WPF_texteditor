@@ -58,5 +58,9 @@ namespace opc1_d11_WPF_texteditor
                 }
             }
         }
+        private void MenuQuit(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 }
