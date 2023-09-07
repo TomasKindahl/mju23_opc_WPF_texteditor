@@ -12,7 +12,7 @@
                 <MenuItem Header="_New" Click="MenuNewSelect"/>
             </MenuItem>            
         </Menu>
-        <TextBox HorizontalAlignment="Stretch" Margin="0,24,0,24" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" FontSize="16"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="0,24,0,24" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" FontSize="16" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True"/>
         <TextBlock Name="MessageBar" Height="24" HorizontalAlignment="Stretch" Margin="0,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" FontSize="16"/>
     </Grid>
 </Window>
