@@ -43,8 +43,19 @@ namespace opc1_d11_WPF_texteditor
         }
         private void MenuSave(object sender, RoutedEventArgs e)
         {
-            using(StreamWriter sw = new StreamWriter(MessageBar.Text)) {
-                sw.Write(TextEdit.Text);
+            if (MessageBar.Text == "Untitled")
+            {
+                // Per https://wpf-tutorial.com/dialogs/the-savefiledialog/
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                if (saveFileDialog.ShowDialog() == true)
+                    File.WriteAllText(saveFileDialog.FileName, MessageBar.Text);
+            }
+            else
+            {
+                using (StreamWriter sw = new StreamWriter(MessageBar.Text))
+                {
+                    sw.Write(TextEdit.Text);
+                }
             }
         }
     }
