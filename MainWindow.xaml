@@ -11,6 +11,7 @@
             <MenuItem Header="_File">
                 <MenuItem Header="_New" Click="MenuNew"/>
                 <MenuItem Header="_Open" Click="MenuOpen"/>
+                <MenuItem Header="_Save" Click="MenuSave"/>
             </MenuItem>            
         </Menu>
         <TextBox Name="TextEdit" HorizontalAlignment="Stretch" Margin="0,24,0,24" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" FontSize="16" AcceptsReturn="True" AcceptsTab="True" AutoWordSelection="True"/>

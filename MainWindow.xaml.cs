@@ -40,5 +40,11 @@ namespace opc1_d11_WPF_texteditor
                 MessageBar.Text = openFileDialog.FileName;
             }
         }
+        private void MenuSave(object sender, RoutedEventArgs e)
+        {
+            using(StreamWriter sw = new StreamWriter(MessageBar.Text)) {
+                sw.Write(TextEdit.Text);
+            }
+        }
     }
 }
