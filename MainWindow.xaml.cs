@@ -29,7 +29,8 @@ namespace opc1_d11_WPF_texteditor
         }
         private void MenuNew(object sender, RoutedEventArgs e)
         {
-
+            TextEdit.Text = "";
+            MessageBar.Text = "Untitled";
         }
         private void MenuOpen(object sender, RoutedEventArgs e)
         {
