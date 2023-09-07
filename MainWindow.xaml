@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Menu Height="20" VerticalAlignment="Top">
+        <Menu Height="24" VerticalAlignment="Top" FontSize="16">
             <MenuItem Header="_File">
                 <MenuItem Header="_New" Click="MenuNewSelect"/>
             </MenuItem>            
         </Menu>
-        <TextBox HorizontalAlignment="Stretch" Margin="0,20,0,20" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch"/>
-        <TextBlock Height="20" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="0,24,0,24" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" FontSize="16"/>
+        <TextBlock Height="24" HorizontalAlignment="Stretch" Margin="0,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" FontSize="16"/>
     </Grid>
 </Window>
